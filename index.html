@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Jay Bhavani Vadapav - October 2026 Tiffin Menu</title>
+
+  <!-- GOV.UK Transport font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    /* =============================================
+       GOV.UK Design System - Core Token Palette
+       ============================================= */
+    :root {
+      --govuk-colour-black:        #0b0c0c;
+      --govuk-colour-white:        #ffffff;
+      --govuk-colour-light-grey:   #f3f2f1;
+      --govuk-colour-mid-grey:     #b1b4b6;
+      --govuk-colour-dark-grey:    #505a5f;
+      --govuk-colour-blue:         #1d70b8;
+      --govuk-colour-dark-blue:    #003078;
+      --govuk-colour-green:        #00703c;
+      --govuk-colour-red:          #d4351c;
+      --govuk-colour-yellow:       #ffdd00;
+      --govuk-colour-orange:       #f47738;
+
+      /* Typography */
+      --govuk-font-family: "Source Sans 3", Arial, sans-serif;
+      --govuk-body-size: 1rem;        /* 16px */
+      --govuk-body-line-height: 1.5;
+
+      /* Spacing scale (multiples of 5px) */
+      --sp-1: 5px;
+      --sp-2: 10px;
+      --sp-3: 15px;
+      --sp-4: 20px;
+      --sp-5: 25px;
+      --sp-6: 30px;
+      --sp-8: 40px;
+      --sp-9: 45px;
+    }
+
+    /* =============================================
+       Base Reset + GOV.UK Typography
+       ============================================= */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: var(--govuk-font-family);
+      font-size: var(--govuk-body-size);
+      line-height: var(--govuk-body-line-height);
+      color: var(--govuk-colour-black);
+      background: var(--govuk-colour-white);
+    }
+
+    /* =============================================
+       GOV.UK Header (crown bar + service name)
+       ============================================= */
+    .govuk-header {
+      background: var(--govuk-colour-black);
+      border-bottom: 10px solid var(--govuk-colour-yellow);
+      padding: var(--sp-3) 0;
+    }
+    .govuk-header__container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 0 var(--sp-4);
+      display: flex;
+      align-items: center;
+      gap: var(--sp-3);
+      flex-wrap: wrap;
+    }
+    .govuk-header__logotype {
+      display: flex;
+      align-items: center;
+      gap: var(--sp-2);
+      text-decoration: none;
+    }
+    .govuk-header__logotype-icon {
+      width: 36px;
+      height: 36px;
+      flex-shrink: 0;
+    }
+    .govuk-header__product-name {
+      color: var(--govuk-colour-white);
+      font-size: 1.125rem;
+      font-weight: 700;
+      letter-spacing: 0;
+      line-height: 1.2;
+    }
+    .govuk-header__service-name {
+      color: var(--govuk-colour-mid-grey);
+      font-size: 0.875rem;
+      font-weight: 400;
+    }
+
+    /* =============================================
+       Main Layout Container
+       ============================================= */
+    .govuk-main-wrapper {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: var(--sp-6) var(--sp-4);
+    }
+
+    /* =============================================
+       GOV.UK Heading Styles
+       ============================================= */
+    .govuk-heading-xl {
+      font-size: 2rem;
+      font-weight: 700;
+      line-height: 1.1;
+      margin-bottom: var(--sp-4);
+    }
+    .govuk-heading-l {
+      font-size: 1.5rem;
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: var(--sp-3);
+      margin-top: var(--sp-6);
+    }
+    .govuk-heading-m {
+      font-size: 1.125rem;
+      font-weight: 700;
+      line-height: 1.3;
+      margin-bottom: var(--sp-2);
+    }
+    .govuk-body {
+      font-size: 1rem;
+      line-height: 1.5;
+      margin-bottom: var(--sp-4);
+      color: var(--govuk-colour-black);
+    }
+    .govuk-body-s {
+      font-size: 0.875rem;
+      line-height: 1.4;
+      color: var(--govuk-colour-dark-grey);
+      margin-bottom: var(--sp-2);
+    }
+
+    /* =============================================
+       GOV.UK Inset Text (today highlight box)
+       ============================================= */
+    .govuk-inset-text {
+      border-left: 5px solid var(--govuk-colour-mid-grey);
+      padding: var(--sp-3) var(--sp-4);
+      margin-bottom: var(--sp-6);
+      background: var(--govuk-colour-light-grey);
+    }
+    .govuk-inset-text--blue {
+      border-left-color: var(--govuk-colour-blue);
+    }
+
+    /* =============================================
+       GOV.UK Tag (badge/pill)
+       ============================================= */
+    .govuk-tag {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      padding: 2px 8px;
+      color: var(--govuk-colour-white);
+      background: var(--govuk-colour-blue);
+    }
+    .govuk-tag--green  { background: var(--govuk-colour-green); }
+    .govuk-tag--orange { background: var(--govuk-colour-orange); }
+    .govuk-tag--grey   { background: var(--govuk-colour-dark-grey); }
+
+    /* =============================================
+       GOV.UK Form Elements (select / label)
+       ============================================= */
+    .govuk-form-group {
+      margin-bottom: var(--sp-6);
+    }
+    .govuk-label {
+      display: block;
+      font-size: 1.125rem;
+      font-weight: 700;
+      margin-bottom: var(--sp-2);
+    }
+    .govuk-hint {
+      display: block;
+      font-size: 0.875rem;
+      color: var(--govuk-colour-dark-grey);
+      margin-bottom: var(--sp-2);
+    }
+    .govuk-select {
+      font-family: var(--govuk-font-family);
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1.25;
+      color: var(--govuk-colour-black);
+      background: var(--govuk-colour-white);
+      border: 2px solid var(--govuk-colour-black);
+      border-radius: 0;
+      padding: var(--sp-2) var(--sp-3);
+      width: 100%;
+      max-width: 400px;
+      appearance: none;
+      -webkit-appearance: none;
+      cursor: pointer;
+      /* Custom dropdown arrow using inline SVG data URI (GOV.UK style) */
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='13' height='17' viewBox='0 0 13 17'%3E%3Cpath fill='%230b0c0c' d='M6.5 0L0 6h13z' transform='translate(0 11)'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 12px center;
+      padding-right: 40px;
+    }
+    .govuk-select:focus {
+      outline: 3px solid var(--govuk-colour-yellow);
+      outline-offset: 0;
+      box-shadow: inset 0 0 0 2px var(--govuk-colour-black);
+    }
+
+    /* =============================================
+       GOV.UK Table
+       ============================================= */
+    .govuk-table-wrapper {
+      overflow-x: auto;   /* horizontal scroll on small screens */
+      -webkit-overflow-scrolling: touch;
+      margin-bottom: var(--sp-6);
+    }
+    .govuk-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.9375rem;
+    }
+    .govuk-table__head {
+      background: var(--govuk-colour-dark-blue);
+      color: var(--govuk-colour-white);
+    }
+    .govuk-table__head th {
+      padding: var(--sp-2) var(--sp-3);
+      text-align: left;
+      font-weight: 700;
+      border: 1px solid var(--govuk-colour-dark-blue);
+      white-space: nowrap;
+    }
+    .govuk-table__body tr:nth-child(even) {
+      background: var(--govuk-colour-light-grey);
+    }
+    .govuk-table__body tr:hover {
+      background: #dee0e2;
+    }
+    .govuk-table__body td {
+      padding: var(--sp-2) var(--sp-3);
+      border: 1px solid var(--govuk-colour-mid-grey);
+      vertical-align: top;
+    }
+    /* Highlight the "today" row in the full table */
+    .govuk-table__body tr.is-today {
+      background: #fff7bf; /* GOV.UK yellow tint */
+      font-weight: 700;
+    }
+    .govuk-table__body tr.is-today td {
+      border-color: #b58900;
+    }
+
+    /* =============================================
+       Today's Menu Card (prominent single-day view)
+       ============================================= */
+    .menu-card {
+      border: 2px solid var(--govuk-colour-black);
+      margin-bottom: var(--sp-6);
+    }
+    .menu-card__header {
+      background: var(--govuk-colour-dark-blue);
+      color: var(--govuk-colour-white);
+      padding: var(--sp-3) var(--sp-4);
+      display: flex;
+      align-items: center;
+      gap: var(--sp-2);
+      flex-wrap: wrap;
+    }
+    .menu-card__header h2 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      flex: 1;
+    }
+    .menu-card__body {
+      padding: var(--sp-4);
+    }
+    .menu-card__row {
+      display: flex;
+      gap: var(--sp-2);
+      padding: var(--sp-2) 0;
+      border-bottom: 1px solid var(--govuk-colour-light-grey);
+      align-items: flex-start;
+    }
+    .menu-card__row:last-child { border-bottom: none; }
+    .menu-card__label {
+      font-size: 0.875rem;
+      font-weight: 700;
+      color: var(--govuk-colour-dark-grey);
+      width: 110px;
+      flex-shrink: 0;
+    }
+    .menu-card__value {
+      font-size: 0.9375rem;
+      color: var(--govuk-colour-black);
+    }
+
+    /* Closed day state */
+    .menu-card--closed .menu-card__header {
+      background: var(--govuk-colour-dark-grey);
+    }
+    .closed-message {
+      padding: var(--sp-4);
+      color: var(--govuk-colour-dark-grey);
+      font-style: italic;
+    }
+
+    /* =============================================
+       Section Divider
+       ============================================= */
+    .govuk-section-break {
+      border: 0;
+      border-top: 2px solid var(--govuk-colour-mid-grey);
+      margin: var(--sp-8) 0;
+    }
+
+    /* =============================================
+       Summary / Contact Info list
+       ============================================= */
+    .govuk-summary-list {
+      border-top: 1px solid var(--govuk-colour-mid-grey);
+      margin-bottom: var(--sp-6);
+    }
+    .govuk-summary-list__row {
+      display: flex;
+      gap: var(--sp-4);
+      padding: var(--sp-2) 0;
+      border-bottom: 1px solid var(--govuk-colour-mid-grey);
+      flex-wrap: wrap;
+    }
+    .govuk-summary-list__key {
+      font-weight: 700;
+      width: 140px;
+      flex-shrink: 0;
+      font-size: 0.875rem;
+    }
+    .govuk-summary-list__value {
+      font-size: 0.875rem;
+    }
+
+    /* =============================================
+       Warning Text
+       ============================================= */
+    .govuk-warning-text {
+      display: flex;
+      align-items: flex-start;
+      gap: var(--sp-3);
+      background: #fff3cd;
+      border-left: 5px solid var(--govuk-colour-orange);
+      padding: var(--sp-3) var(--sp-4);
+      margin-bottom: var(--sp-4);
+    }
+    .govuk-warning-text__icon {
+      width: 24px;
+      height: 24px;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    .govuk-warning-text__text {
+      font-size: 0.875rem;
+      color: var(--govuk-colour-black);
+    }
+
+    /* =============================================
+       Packages grid
+       ============================================= */
+    .packages-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: var(--sp-4);
+      margin-bottom: var(--sp-6);
+    }
+    .package-card {
+      border: 2px solid var(--govuk-colour-black);
+      padding: var(--sp-3);
+    }
+    .package-card__title {
+      font-size: 0.875rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      background: var(--govuk-colour-dark-blue);
+      color: var(--govuk-colour-white);
+      padding: var(--sp-1) var(--sp-2);
+      margin: calc(-1 * var(--sp-3)) calc(-1 * var(--sp-3)) var(--sp-3);
+    }
+    .package-card ul {
+      list-style: disc;
+      padding-left: var(--sp-4);
+      font-size: 0.875rem;
+      line-height: 1.6;
+    }
+
+    /* =============================================
+       Footer
+       ============================================= */
+    .govuk-footer {
+      background: var(--govuk-colour-light-grey);
+      border-top: 2px solid var(--govuk-colour-mid-grey);
+      padding: var(--sp-6) 0;
+      margin-top: var(--sp-8);
+    }
+    .govuk-footer__container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 0 var(--sp-4);
+      font-size: 0.875rem;
+      color: var(--govuk-colour-dark-grey);
+    }
+
+    /* =============================================
+       Responsive: mobile adjustments
+       ============================================= */
+    @media (max-width: 600px) {
+      .govuk-heading-xl { font-size: 1.5rem; }
+      .govuk-heading-l  { font-size: 1.25rem; }
+      .menu-card__label { width: 90px; }
+      .govuk-select     { max-width: 100%; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== GOV.UK Style Header ===== -->
+  <header class="govuk-header" role="banner">
+    <div class="govuk-header__container">
+      <a href="#main-content" class="govuk-header__logotype">
+        <!-- Tiffin icon from Material Icons CDN (online reference, no custom SVG) -->
+        <img
+          class="govuk-header__logotype-icon"
+          src="https://fonts.gstatic.com/s/i/materialiconsoutlined/lunch_dining/v12/24px.svg"
+          alt=""
+          aria-hidden="true"
+          width="36"
+          height="36"
+          style="filter: invert(1);"
+        />
+        <span>
+          <span class="govuk-header__product-name">Jay Bhavani Vadapav</span><br />
+          <span class="govuk-header__service-name">October 2026 Tiffin Menu</span>
+        </span>
+      </a>
+    </div>
+  </header>
+
+  <!-- ===== Skip to content (accessibility) ===== -->
+  <a href="#main-content" style="position:absolute;left:-9999px;top:0;width:1px;height:1px;overflow:hidden;" id="skip-link">Skip to main content</a>
+
+  <!-- ===== Main Content ===== -->
+  <main id="main-content" class="govuk-main-wrapper">
+
+    <!-- Page title -->
+    <h1 class="govuk-heading-xl">Tiffin Menu - October 2026</h1>
+
+    <!-- =============================================
+         TODAY'S MENU SECTION
+         Displayed automatically based on current date
+         ============================================= -->
+    <section aria-labelledby="today-heading">
+      <h2 class="govuk-heading-l" id="today-heading">Today's Menu</h2>
+      <div id="today-card">
+        <!-- Populated by JavaScript -->
+      </div>
+    </section>
+
+    <hr class="govuk-section-break" />
+
+    <!-- =============================================
+         DAY SELECTOR DROPDOWN
+         ============================================= -->
+    <section aria-labelledby="select-heading">
+      <h2 class="govuk-heading-l" id="select-heading">View Menu for Another Day</h2>
+
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="day-select">
+          Select a day
+        </label>
+        <span class="govuk-hint">Choose any weekday in October 2026 to see what is on the menu.</span>
+        <select class="govuk-select" id="day-select" aria-label="Select a day to view the menu">
+          <!-- Options populated by JavaScript -->
+        </select>
+      </div>
+
+      <!-- Selected day card -->
+      <div id="selected-card">
+        <!-- Populated by JavaScript -->
+      </div>
+    </section>
+
+    <hr class="govuk-section-break" />
+
+    <!-- =============================================
+         FULL OCTOBER MENU TABLE
+         ============================================= -->
+    <section aria-labelledby="full-table-heading">
+      <h2 class="govuk-heading-l" id="full-table-heading">Full October Menu</h2>
+      <p class="govuk-body">Today's date is highlighted in the table below.</p>
+
+      <div class="govuk-table-wrapper">
+        <table class="govuk-table" aria-label="Full October 2026 Tiffin Menu">
+          <thead class="govuk-table__head">
+            <tr>
+              <th scope="col">Date</th>
+              <th scope="col">Day</th>
+              <th scope="col">Curry / Main</th>
+              <th scope="col">Indian Bread</th>
+              <th scope="col">Lentil</th>
+              <th scope="col">Rice</th>
+              <th scope="col">Sweet</th>
+              <th scope="col">Notes</th>
+            </tr>
+          </thead>
+          <tbody class="govuk-table__body" id="full-table-body">
+            <!-- Populated by JavaScript -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <hr class="govuk-section-break" />
+
+    <!-- =============================================
+         PACKAGES SECTION
+         ============================================= -->
+    <section aria-labelledby="packages-heading">
+      <h2 class="govuk-heading-l" id="packages-heading">Tiffin Packages</h2>
+      <p class="govuk-body">The same subscription price applies to all three packages.</p>
+
+      <div class="packages-grid">
+        <div class="package-card">
+          <div class="package-card__title">Package 1 - Complete Meal</div>
+          <ul>
+            <li>1 Curry - 12 oz</li>
+            <li>1 Dal - 12 oz</li>
+            <li>1 Rice - 12 oz</li>
+            <li>4 Rotis</li>
+          </ul>
+        </div>
+        <div class="package-card">
+          <div class="package-card__title">Package 2 - Curry and Rotis</div>
+          <ul>
+            <li>1 Curry - 16 oz</li>
+            <li>8 Rotis</li>
+          </ul>
+        </div>
+        <div class="package-card">
+          <div class="package-card__title">Package 3 - Dal and Rice</div>
+          <ul>
+            <li>1 Rice - 16 oz</li>
+            <li>1 Dal - 16 oz</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Pricing table -->
+      <h3 class="govuk-heading-m">Subscription Prices</h3>
+      <div class="govuk-table-wrapper">
+        <table class="govuk-table" aria-label="Subscription pricing">
+          <thead class="govuk-table__head">
+            <tr>
+              <th scope="col">Subscription</th>
+              <th scope="col">Price (cash)</th>
+              <th scope="col">Details</th>
+            </tr>
+          </thead>
+          <tbody class="govuk-table__body">
+            <tr><td>Monthly</td><td>$240</td><td>Payment due at least 2 days before start date</td></tr>
+            <tr><td>Two-Week</td><td>$140</td><td>Payment due at least 2 days before start date</td></tr>
+            <tr><td>Flexible / Per Day</td><td>$15 per day</td><td>Payment due before scheduled delivery</td></tr>
+            <tr><td>Delivery Charge</td><td>$1 extra per day</td><td>Downtown Montreal and surrounding areas</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="govuk-warning-text">
+        <!-- Warning icon from Material Icons CDN -->
+        <img
+          class="govuk-warning-text__icon"
+          src="https://fonts.gstatic.com/s/i/materialiconsoutlined/warning_amber/v12/24px.svg"
+          alt="Warning"
+          width="24"
+          height="24"
+        />
+        <span class="govuk-warning-text__text">
+          A 15% tax will be added to all online payments. Cash payments avoid this surcharge.
+        </span>
+      </div>
+    </section>
+
+    <hr class="govuk-section-break" />
+
+    <!-- =============================================
+         CONTACT / INFO SECTION
+         ============================================= -->
+    <section aria-labelledby="contact-heading">
+      <h2 class="govuk-heading-l" id="contact-heading">Contact and Important Notes</h2>
+
+      <dl class="govuk-summary-list">
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">Address</dt>
+          <dd class="govuk-summary-list__value">1224 Rue Bishop, Montreal, QC H3G 2E3</dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">Phone</dt>
+          <dd class="govuk-summary-list__value">+1 438 788 1204</dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">Email</dt>
+          <dd class="govuk-summary-list__value">jbvmontreal@gmail.com</dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">Delivery Area</dt>
+          <dd class="govuk-summary-list__value">Downtown Montreal and surrounding areas</dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">Referral Bonus</dt>
+          <dd class="govuk-summary-list__value">Refer a new customer and receive 5% off your next monthly or two-week subscription.</dd>
+        </div>
+      </dl>
+
+      <div class="govuk-inset-text govuk-inset-text--blue">
+        <p class="govuk-body-s">
+          No menu customization is offered. If you cancel, no refund or credit will be issued.
+          Gluten-free and No Onion No Garlic (Swaminarayan) tiffin items may differ and can change without notice.
+          Please inform the service of any food allergies before subscribing.
+        </p>
+      </div>
+    </section>
+
+  </main><!-- /govuk-main-wrapper -->
+
+  <!-- ===== Footer ===== -->
+  <footer class="govuk-footer" role="contentinfo">
+    <div class="govuk-footer__container">
+      Jay Bhavani Vadapav - Tiffin Service | 1224 Rue Bishop, Montreal, QC H3G 2E3 | +1 438 788 1204
+    </div>
+  </footer>
+
+  <!-- =============================================
+       JavaScript - All menu data and UI logic
+       ============================================= -->
+  <script>
+    /**
+     * MENU DATA
+     * Extracted from the October 2026 JBV Tiffin PDF.
+     * Each entry maps to a calendar date in October 2026.
+     * null values indicate a closed day or no regular menu.
+     */
+    const MENU = [
+      /* Week 1 */
+      { date: "2026-10-01", day: "Thursday", curry: "Aloo Tomato",   bread: "Poori (5 or 10)", lentil: "Dal Fry",      rice: "Jeera Rice",          sweet: "Halwa",      notes: "Sweet Day"           },
+      { date: "2026-10-02", day: "Friday",   curry: "Paneer Makhani",bread: "Paratha (3 or 6)",lentil: "Mix Dal",       rice: "Steam Rice",          sweet: "-",          notes: "Paneer Curry"        },
+      { date: "2026-10-03", day: "Saturday", curry: "Veg Biryani",   bread: "-",               lentil: "-",             rice: "-",                   sweet: "-",          notes: "Fast food"           },
+      { date: "2026-10-04", day: "Sunday",   curry: null, closed: true },
+
+      /* Week 2 */
+      { date: "2026-10-05", day: "Monday",   curry: "Aloo Beans",    bread: "Roti (4 or 8)",   lentil: "Gujarati Dal",  rice: "Steam Rice",          sweet: "-",          notes: "-"                   },
+      { date: "2026-10-06", day: "Tuesday",  curry: "Cabbage-Carrot",bread: "Paratha (3 or 6)",lentil: "Masoor Dal",    rice: "Jeera Rice",          sweet: "-",          notes: "-"                   },
+      { date: "2026-10-07", day: "Wednesday",curry: "Dal Lobia",     bread: "Roti (4 or 8)",   lentil: "Kadhi",         rice: "Steam Rice",          sweet: "-",          notes: "-"                   },
+      { date: "2026-10-08", day: "Thursday", curry: "Saag",          bread: "Poori (5 or 10)", lentil: "Mong",          rice: "Jeera Rice",          sweet: "Jalebi",     notes: "Sweet Day"           },
+      { date: "2026-10-09", day: "Friday",   curry: "Veg Paneer",    bread: "Paratha (3 or 6)",lentil: "Dal Maharani",  rice: "Steam Rice",          sweet: "-",          notes: "Paneer Curry"        },
+      { date: "2026-10-10", day: "Saturday", curry: "Mix Paratha",   bread: "-",               lentil: "-",             rice: "-",                   sweet: "-",          notes: "Fast food"           },
+      { date: "2026-10-11", day: "Sunday",   curry: null, closed: true },
+
+      /* Week 3 */
+      { date: "2026-10-12", day: "Monday",   curry: "Aloo Tinde",    bread: "Roti (4 or 8)",   lentil: "Gujarati Dal",  rice: "Steam Rice",          sweet: "-",          notes: "-"                   },
+      { date: "2026-10-13", day: "Tuesday",  curry: "Aachari Gobi",  bread: "Paratha (3 or 6)",lentil: "Chana Dal",     rice: "Yellow Rice",         sweet: "-",          notes: "-"                   },
+      { date: "2026-10-14", day: "Wednesday",curry: "Desi Chana",    bread: "Roti (4 or 8)",   lentil: "Kadhi",         rice: "Steam Rice",          sweet: "-",          notes: "-"                   },
+      { date: "2026-10-15", day: "Thursday", curry: "Mix Veg",       bread: "Poori (5 or 10)", lentil: "Dal Tadka",     rice: "Jeera Rice",          sweet: "Basudi",     notes: "Sweet Day"           },
+      { date: "2026-10-16", day: "Friday",   curry: "Matter Paneer", bread: "Paratha (3 or 6)",lentil: "Mix Dal",        rice: "Steam Rice",          sweet: "-",          notes: "Paneer Curry"        },
+      { date: "2026-10-17", day: "Saturday", curry: "Rice Dokla",    bread: "-",               lentil: "-",             rice: "-",                   sweet: "-",          notes: "Fast food"           },
+      { date: "2026-10-18", day: "Sunday",   curry: null, closed: true },
+
+      /* Week 4 */
+      { date: "2026-10-19", day: "Monday",   curry: "Aloo Carrot",   bread: "Roti (4 or 8)",   lentil: "Gujarati Dal",  rice: "Steam Rice",          sweet: "-",          notes: "-"                   },
+      { date: "2026-10-20", day: "Tuesday",  curry: "Bhindi",        bread: "Paratha (3 or 6)",lentil: "Dal Fry",       rice: "Matter Rice",         sweet: "-",          notes: "-"                   },
+      { date: "2026-10-21", day: "Wednesday",curry: "Dubhi Chana",   bread: "Roti (4 or 8)",   lentil: "Kadhi",         rice: "Steam Rice",          sweet: "-",          notes: "-"                   },
+      { date: "2026-10-22", day: "Thursday", curry: "Soya Chaap",    bread: "Poori (5 or 10)", lentil: "Dal Tadka",     rice: "Jeera Rice",          sweet: "Gulab Jamun",notes: "Sweet Day"           },
+      { date: "2026-10-23", day: "Friday",   curry: "Nutri Paneer",  bread: "Paratha (3 or 6)",lentil: "Dal Maharani",  rice: "Steam Rice",          sweet: "-",          notes: "Paneer Curry"        },
+      { date: "2026-10-24", day: "Saturday", curry: "Poha",          bread: "-",               lentil: "-",             rice: "-",                   sweet: "-",          notes: "Fast food"           },
+      { date: "2026-10-25", day: "Sunday",   curry: null, closed: true },
+
+      /* Week 5 */
+      { date: "2026-10-26", day: "Monday",   curry: "Jeera Aloo",    bread: "Roti (4 or 8)",   lentil: "Gujarati Dal",  rice: "Steam Rice",          sweet: "-",          notes: "-"                   },
+      { date: "2026-10-27", day: "Tuesday",  curry: "Masala Baigan", bread: "Paratha (3 or 6)",lentil: "Dal Fry",       rice: "Clove Rice",          sweet: "-",          notes: "-"                   },
+      { date: "2026-10-28", day: "Wednesday",curry: "White Peas",    bread: "Roti (4 or 8)",   lentil: "Kadhi",         rice: "Cinnamon Clove Rice", sweet: "-",          notes: "-"                   },
+      { date: "2026-10-29", day: "Thursday", curry: "Veg Jalfrazi",  bread: "Poori (5 or 10)", lentil: "Dal Tadka",     rice: "Jeera Rice",          sweet: "Kheer",      notes: "Sweet Day"           },
+      { date: "2026-10-30", day: "Friday",   curry: "Paneer Chana",  bread: "Paratha (3 or 6)",lentil: "Mix Dal",        rice: "Steam Rice",          sweet: "-",          notes: "Paneer Curry"        },
+      { date: "2026-10-31", day: "Saturday", curry: "Veg Crispy",    bread: "-",               lentil: "-",             rice: "-",                   sweet: "-",          notes: "Fast food"           },
+    ];
+
+    /**
+     * Helper: Format a Date object as "YYYY-MM-DD" in local time
+     * so it matches the date strings in MENU above.
+     */
+    function toLocalDateString(d) {
+      const y = d.getFullYear();
+      const m = String(d.getMonth() + 1).padStart(2, "0");
+      const day = String(d.getDate()).padStart(2, "0");
+      return `${y}-${m}-${day}`;
+    }
+
+    /**
+     * Helper: Return a human-readable date label, e.g. "Thursday, 1 October 2026"
+     */
+    function formatLabel(dateStr) {
+      const [y, m, d] = dateStr.split("-").map(Number);
+      const dt = new Date(y, m - 1, d);
+      return dt.toLocaleDateString("en-GB", {
+        weekday: "long", day: "numeric", month: "long", year: "numeric"
+      });
+    }
+
+    /**
+     * Render a single-day menu card into a target element.
+     * @param {HTMLElement} container  - The element to render into
+     * @param {object|undefined} item  - Menu entry or undefined (out of range)
+     * @param {boolean} isToday        - Whether this is the current date
+     */
+    function renderMenuCard(container, item, isToday) {
+      if (!item) {
+        /* Date not found in October data */
+        container.innerHTML = `
+          <div class="govuk-inset-text">
+            <p class="govuk-body">No menu data available for this date.</p>
+          </div>`;
+        return;
+      }
+
+      const label = formatLabel(item.date);
+
+      if (item.closed) {
+        /* Closed day (Sunday) */
+        container.innerHTML = `
+          <div class="menu-card menu-card--closed">
+            <div class="menu-card__header">
+              <img src="https://fonts.gstatic.com/s/i/materialiconsoutlined/event_busy/v12/24px.svg"
+                   alt="" width="24" height="24" style="filter:invert(1);" aria-hidden="true" />
+              <h2>${label}</h2>
+              ${isToday ? '<span class="govuk-tag govuk-tag--green">Today</span>' : ""}
+            </div>
+            <p class="closed-message">Closed - No regular menu on Sundays. The Sunday menu may occasionally be available; please contact to confirm.</p>
+          </div>`;
+        return;
+      }
+
+      /* Build rows only for fields that have a value */
+      const fields = [
+        { label: "Curry / Main", value: item.curry },
+        { label: "Indian Bread", value: item.bread },
+        { label: "Lentil",       value: item.lentil },
+        { label: "Rice",         value: item.rice },
+        { label: "Sweet",        value: item.sweet },
+        { label: "Notes",        value: item.notes },
+      ].filter(f => f.value && f.value !== "-");
+
+      const rows = fields.map(f => `
+        <div class="menu-card__row">
+          <span class="menu-card__label">${f.label}</span>
+          <span class="menu-card__value">${f.value}</span>
+        </div>`).join("");
+
+      container.innerHTML = `
+        <div class="menu-card">
+          <div class="menu-card__header">
+            <img src="https://fonts.gstatic.com/s/i/materialiconsoutlined/restaurant_menu/v12/24px.svg"
+                 alt="" width="24" height="24" style="filter:invert(1);" aria-hidden="true" />
+            <h2>${label}</h2>
+            ${isToday ? '<span class="govuk-tag govuk-tag--green">Today</span>' : ""}
+          </div>
+          <div class="menu-card__body">${rows}</div>
+        </div>`;
+    }
+
+    /**
+     * Populate the full table body.
+     * @param {string} todayStr - "YYYY-MM-DD" of today's date
+     */
+    function buildFullTable(todayStr) {
+      const tbody = document.getElementById("full-table-body");
+      tbody.innerHTML = MENU.map(item => {
+        const isToday = item.date === todayStr;
+        const cls = isToday ? ' class="is-today"' : "";
+        if (item.closed) {
+          return `<tr${cls}>
+            <td>${item.date.slice(8)}</td>
+            <td>${item.day}</td>
+            <td colspan="6" style="color:var(--govuk-colour-dark-grey);font-style:italic;">Closed - No regular menu</td>
+          </tr>`;
+        }
+        return `<tr${cls}>
+          <td>${item.date.slice(8)} Oct</td>
+          <td>${item.day}</td>
+          <td>${item.curry || "-"}</td>
+          <td>${item.bread || "-"}</td>
+          <td>${item.lentil || "-"}</td>
+          <td>${item.rice || "-"}</td>
+          <td>${item.sweet || "-"}</td>
+          <td>${item.notes || "-"}</td>
+        </tr>`;
+      }).join("");
+    }
+
+    /**
+     * Populate the dropdown with all October 2026 dates.
+     * @param {string} todayStr - pre-select today if available
+     */
+    function buildDropdown(todayStr) {
+      const select = document.getElementById("day-select");
+      MENU.forEach(item => {
+        const opt = document.createElement("option");
+        opt.value = item.date;
+        const label = formatLabel(item.date);
+        opt.textContent = label + (item.closed ? " (Closed)" : "");
+        if (item.date === todayStr) opt.selected = true;
+        select.appendChild(opt);
+      });
+
+      /* Listen for changes */
+      select.addEventListener("change", () => {
+        const selected = MENU.find(m => m.date === select.value);
+        renderMenuCard(
+          document.getElementById("selected-card"),
+          selected,
+          select.value === todayStr
+        );
+        /* Scroll selected card into view on mobile */
+        document.getElementById("selected-card").scrollIntoView({ behavior: "smooth", block: "start" });
+      });
+    }
+
+    /**
+     * Main init - runs after DOM is ready
+     */
+    function init() {
+      const todayStr = toLocalDateString(new Date());
+
+      /* ------ Today's card ------ */
+      const todayItem = MENU.find(m => m.date === todayStr);
+      const todayContainer = document.getElementById("today-card");
+
+      if (!todayItem) {
+        /* Today is outside October 2026 */
+        todayContainer.innerHTML = `
+          <div class="govuk-inset-text">
+            <p class="govuk-body">Today (${todayStr}) is outside October 2026. Use the dropdown below to browse the menu.</p>
+          </div>`;
+      } else {
+        renderMenuCard(todayContainer, todayItem, true);
+      }
+
+      /* ------ Dropdown ------ */
+      buildDropdown(todayStr);
+
+      /* ------ Render selected card (default = today or first entry) ------ */
+      const defaultItem = todayItem || MENU[0];
+      renderMenuCard(
+        document.getElementById("selected-card"),
+        defaultItem,
+        defaultItem && defaultItem.date === todayStr
+      );
+
+      /* ------ Full table ------ */
+      buildFullTable(todayStr);
+    }
+
+    /* Run after DOM loads */
+    document.addEventListener("DOMContentLoaded", init);
+  </script>
+
+</body>
+</html>
